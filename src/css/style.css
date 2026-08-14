@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fundo: #0b0b0d;
+  --fundo-card: #141417;
+  --borda: #26262b;
+  --texto: #ededed;
+  --texto-fraco: #9a9aa3;
+  --destaque: #7c5cff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+
+.topo {
+  position: sticky;
+  top: 0;
+  background-color: rgba(11, 11, 13, 0.85);
+  border-bottom: 1px solid var(--borda);
+  z-index: 10;
+}
+
+.menu {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--texto-fraco);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: var(--texto);
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section {
+  margin-bottom: 55px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  color: var(--texto-fraco);
+  margin-bottom: 10px;
+}
+
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.apresentacao-texto {
+  flex: 1;
+}
+
+.apresentacao h1 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.subtitulo {
+  font-size: 15px;
+}
+
+.foto {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: var(--fundo-card);
+  border: 1px solid var(--borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--destaque);
+  flex-shrink: 0;
+}
+
+.redes {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  background-color: var(--fundo-card);
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn:hover {
+  border-color: var(--destaque);
+  color: var(--destaque);
+}
+
+.card-exp {
+  display: flex;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--borda);
+}
+
+.card-exp:last-child {
+  border-bottom: none;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--fundo-card);
+  border: 1px solid var(--borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--texto-fraco);
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
+
+.linha-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.data {
+  font-size: 12px;
+  color: var(--texto-fraco);
+  white-space: nowrap;
+}
+
+.cargo {
+  font-size: 14px;
+  color: var(--destaque);
+  margin-bottom: 6px;
+}
+
+.info p {
+  font-size: 14px;
+}
+
+.info ul {
+  margin-top: 8px;
+  padding-left: 18px;
+  color: var(--texto-fraco);
+  font-size: 14px;
+}
+
+.info li {
+  margin-bottom: 3px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.tags span {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background-color: #1e1e23;
+  border: 1px solid var(--borda);
+  color: var(--texto-fraco);
+}
+
+.tags-grandes span {
+  font-size: 13px;
+  padding: 5px 12px;
+}
+
+.titulo-skills {
+  margin-top: 35px;
+}
+
+.contato {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.contato p {
+  max-width: 420px;
+  margin: 0 auto 18px auto;
+  font-size: 14px;
+}
+
+.btn-destaque {
+  background-color: var(--destaque);
+  border-color: var(--destaque);
+  color: #fff;
+  padding: 9px 20px;
+  font-size: 14px;
+}
+
+.btn-destaque:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+footer {
+  border-top: 1px solid var(--borda);
+  text-align: center;
+  padding: 22px 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .apresentacao h1 {
+    font-size: 27px;
+  }
+
+  .linha-topo {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .menu {
+    gap: 14px;
+    font-size: 13px;
+  }
+
+}
